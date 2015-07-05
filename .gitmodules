@@ -1,45 +1,45 @@
-[submodule "Vundle.vim"]
-        path = .vim/bundle/Vundle.vim
-        url = git@github.com:gmarik/Vundle.vim.git
-[submodule "ctrlp.vim"]
-        path = .vim/bundle/ctrlp.vim
-        url = git@github.com:kien/ctrlp.vim.git
-[submodule "tmuxline.vim"]
-        path = .vim/bundle/tmuxline.vim
-        url = git@github.com:edkolev/tmuxline.vim.git
-[submodule "vim-airline"]
-        path = .vim/bundle/vim-airline
-        url = git@github.com:bling/vim-airline.git
-[submodule "vim-elixir"]
-        path = .vim/bundle/vim-elixir
-        url = git@github.com:elixir-lang/vim-elixir.git
-[submodule "vim-rails"]
-        path = .vim/bundle/vim-rails
-        url = git@github.com:tpope/vim-rails.git
-[submodule "vim-fugitive"]
-        path = .vim/bundle/vim-fugitive
-        url = git@github.com:tpope/vim-fugitive.git
-[submodule "syntastic"]
-        path = .vim/bundle/syntastic
-        url = git@github.com:scrooloose/syntastic.git
-[submodule "YouCompleteMe"]
-        path = .vim/bundle/YouCompleteMe
-        url = git@github.com:Valloric/YouCompleteMe.git
-[submodule "badwolf"]
-        path = .vim/bundle/badwolf
-        url = git@github.com:sjl/badwolf.git
-[submodule "rust.vim"]
-        path = .vim/bundle/rust.vim
-        url = git@github.com:rust-lang/rust.vim.git
-[submodule "tern_for_vim"]
-        path = .vim/bundle/tern_for_vim
-        url = git@github.com:marijnh/tern_for_vim.git
-[submodule "vim-javascript"]
-        path = .vim/bundle/vim-javascript
-        url = git@github.com:pangloss/vim-javascript.git
-[submodule "vim-jsx"]
-        path = .vim/bundle/vim-jsx
-        url = git@github.com:mxw/vim-jsx.git
-[submodule "vim-scala"]
-        path = .vim/bundle/vim-scala
-        url = git@github.com:derekwyatt/vim-scala.git
+[submodule ".vim/bundle/Vundle.vim"]
+	path = .vim/bundle/Vundle.vim
+	url = git@github.com:gmarik/Vundle.vim.git
+[submodule ".vim/bundle/ctrlp.vim"]
+	path = .vim/bundle/ctrlp.vim
+	url = git@github.com:kien/ctrlp.vim.git
+[submodule ".vim/bundle/tmuxline.vim"]
+	path = .vim/bundle/tmuxline.vim
+	url = git@github.com:edkolev/tmuxline.vim.git
+[submodule ".vim/bundle/vim-airline"]
+	path = .vim/bundle/vim-airline
+	url = git@github.com:bling/vim-airline.git
+[submodule ".vim/bundle/vim-elixir"]
+	path = .vim/bundle/vim-elixir
+	url = git@github.com:elixir-lang/vim-elixir.git
+[submodule ".vim/bundle/vim-rails"]
+	path = .vim/bundle/vim-rails
+	url = git@github.com:tpope/vim-rails.git
+[submodule ".vim/bundle/vim-fugitive"]
+	path = .vim/bundle/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule ".vim/bundle/syntastic"]
+	path = .vim/bundle/syntastic
+	url = git@github.com:scrooloose/syntastic.git
+[submodule ".vim/bundle/YouCompleteMe"]
+	path = .vim/bundle/YouCompleteMe
+	url = git@github.com:Valloric/YouCompleteMe.git
+[submodule ".vim/bundle/badwolf"]
+	path = .vim/bundle/badwolf
+	url = git@github.com:sjl/badwolf.git
+[submodule ".vim/bundle/rust.vim"]
+	path = .vim/bundle/rust.vim
+	url = git@github.com:rust-lang/rust.vim.git
+[submodule ".vim/bundle/tern_for_vim"]
+	path = .vim/bundle/tern_for_vim
+	url = git@github.com:marijnh/tern_for_vim.git
+[submodule ".vim/bundle/vim-javascript"]
+	path = .vim/bundle/vim-javascript
+	url = git@github.com:pangloss/vim-javascript.git
+[submodule ".vim/bundle/vim-jsx"]
+	path = .vim/bundle/vim-jsx
+	url = git@github.com:mxw/vim-jsx.git
+[submodule ".vim/bundle/vim-scala"]
+	path = .vim/bundle/vim-scala
+	url = git@github.com:derekwyatt/vim-scala.git
