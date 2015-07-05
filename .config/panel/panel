@@ -1,0 +1,38 @@
+#! /bin/sh
+
+if [ $(pgrep -cx panel) -gt 1 ] ; then
+	printf "%s\n" "The panel is already running." >&2
+	exit 1
+fi
+
+trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
+
+[ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
+mkfifo "$PANEL_FIFO"
+
+. $HOME/.config/panel/config
+. $HOME/.config/panel/colors
+
+bspc config top_padding $PANEL_HEIGHT
+bspc control --subscribe > "$PANEL_FIFO" &
+xtitle -sf 'T%s' > "$PANEL_FIFO" &
+
+clock() {
+	echo $(date +"%a %-I:%M %p")
+}
+
+# loop to refresh system status
+while true; do
+	echo "S" "%{B#ff93a1a1}%{F#fff3f3f3} %{F-}%{B-}%{B#ff657b83}%{F#fff3f3f3} $(clock) %{F-}%{B-}" > "$PANEL_FIFO" &
+	sleep .5s
+done &
+
+cat "$PANEL_FIFO" \
+	| $HOME/.config/panel/bar \
+	| lemonbar \
+		-g x"$PANEL_HEIGHT" \
+		-u "$PANEL_UNDERLINE" \
+		-f "$PANEL_FONT" \
+		-F "$COLOR_FOREGROUND" \
+		-B "$COLOR_BACKGROUND" &
+wait
