@@ -87,13 +87,19 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-" Splitting consistent with tmux
+" Splittin consistent with tmux
 nnoremap <C-w>e <C-w>v
 nnoremap <C-w>o <C-w>s
 
 " Various shortcuts
 nnoremap <leader>w :w
 nnoremap <leader>q :q
+nnoremap <leader>we <C-w>v
+nnoremap <leader>wo <C-w>s
+nnoremap <leader>wj <C-w>j
+nnoremap <leader>wk <C-w>k
+nnoremap <leader>wh <C-w>h
+nnoremap <leader>wl <C-w>l
 
 " No bad habits
 nnoremap <Left> :echoe "Use h"<CR>

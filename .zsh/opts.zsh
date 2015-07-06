@@ -24,3 +24,6 @@ setopt correct                  # try to correct spelling of commands
 setopt extended_glob            # activate complex pattern globbing
 setopt glob_dots                # include dotfiles in globbing
 setopt print_exit_value         # print return value if non-zero
+
+PANEL_FIFO=$HOME/.config/panel/.fifo
+export PANEL_FIFO

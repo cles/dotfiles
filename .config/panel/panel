@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/bash
 
 if [ $(pgrep -cx panel) -gt 1 ] ; then
 	printf "%s\n" "The panel is already running." >&2
@@ -13,7 +13,7 @@ mkfifo "$PANEL_FIFO"
 . $HOME/.config/panel/config
 . $HOME/.config/panel/colors
 
-bspc config top_padding $PANEL_HEIGHT
+bspc config bottom_padding $PANEL_HEIGHT
 bspc control --subscribe > "$PANEL_FIFO" &
 xtitle -sf 'T%s' > "$PANEL_FIFO" &
 
@@ -34,5 +34,5 @@ cat "$PANEL_FIFO" \
 		-u "$PANEL_UNDERLINE" \
 		-f "$PANEL_FONT" \
 		-F "$COLOR_FOREGROUND" \
-		-B "$COLOR_BACKGROUND" &
+		-B "$COLOR_BACKGROUND" -b &
 wait

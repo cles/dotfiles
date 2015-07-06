@@ -1,3 +1,4 @@
 .config/chromium
+.config/gtk-2.0
 .config/htop
 .vim/.netrwhist
