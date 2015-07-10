@@ -18,7 +18,7 @@ bspc control --subscribe > "$PANEL_FIFO" &
 xtitle -sf 'T%s' > "$PANEL_FIFO" &
 
 clock() {
-	echo $(date +"%a %-I:%M %p")
+	echo $(date +"%Y-%m-%d %a %-I:%M %p")
 }
 
 # loop to refresh system status

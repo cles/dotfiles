@@ -1,4 +1,6 @@
 .config/chromium
 .config/gtk-2.0
 .config/htop
+.config/Trolltech.conf
+.config/VirtualBox
 .vim/.netrwhist
