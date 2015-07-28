@@ -15,14 +15,14 @@ Plugin 'edkolev/promptline.vim'
 " file search
 Plugin 'kien/ctrlp.vim'
 
-" code complletion
+" code completion
 Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
 
 " git
 Plugin 'tpope/vim-fugitive'
 
-" Rails
+" rails
 Plugin 'tpope/vim-rails'
 
 " elixir
@@ -33,6 +33,10 @@ Plugin 'rust-lang/rust.vim'
 
 " scala
 Plugin 'derekwyatt/vim-scala'
+
+" clojure
+Plugin 'tpope/vim-salve'
+Plugin 'tpope/vim-fireplace'
 
 " js
 Plugin 'pangloss/vim-javascript'
