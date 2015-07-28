@@ -3,4 +3,7 @@
 .config/htop
 .config/Trolltech.conf
 .config/VirtualBox
+.config/menus
+.config/mpd
+.config/systemd
 .vim/.netrwhist

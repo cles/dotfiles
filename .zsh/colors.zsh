@@ -10,7 +10,7 @@ if ls --color -d . &>/dev/null 2>&1
 then
   # Linux Style
   export LS_COLORS=$LS_COLORS
-  alias ls='ls --color=tty'
+  alias ls='ls --color=auto'
 else
   # BSD Style
   export LSCOLORS=$LSCOLORS

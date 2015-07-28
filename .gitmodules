@@ -7,6 +7,9 @@
 [submodule ".vim/bundle/tmuxline.vim"]
 	path = .vim/bundle/tmuxline.vim
 	url = git@github.com:edkolev/tmuxline.vim.git
+[submodule ".vim/bundle/promptline.vim"]
+	path = .vim/bundle/promptline.vim
+	url = git@github.com:edkolev/promptline.vim.git
 [submodule ".vim/bundle/vim-airline"]
 	path = .vim/bundle/vim-airline
 	url = git@github.com:bling/vim-airline.git
@@ -25,9 +28,6 @@
 [submodule ".vim/bundle/YouCompleteMe"]
 	path = .vim/bundle/YouCompleteMe
 	url = git@github.com:Valloric/YouCompleteMe.git
-[submodule ".vim/bundle/badwolf"]
-	path = .vim/bundle/badwolf
-	url = git@github.com:sjl/badwolf.git
 [submodule ".vim/bundle/rust.vim"]
 	path = .vim/bundle/rust.vim
 	url = git@github.com:rust-lang/rust.vim.git
@@ -43,3 +43,6 @@
 [submodule ".vim/bundle/vim-scala"]
 	path = .vim/bundle/vim-scala
 	url = git@github.com:derekwyatt/vim-scala.git
+[submodule ".vim/bundle/gotham"]
+	path = .vim/bundle/gotham
+	url = git@github.com:whatyouhide/gotham.git

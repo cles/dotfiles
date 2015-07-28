@@ -1,4 +1,4 @@
-#PANEL_FONT="-adobe-source code pro-medium-r-normal-*-12-*-*-*-m-*-*-1"
-PANEL_FONT="-misc-anonymous pro-medium-r-normal-*-12-*-*-*-m-*-*-1"
+PANEL_FONT="-adobe-source code pro-medium-r-normal-*-12-*-*-*-m-*-*-1"
+#PANEL_FONT="-misc-anonymous pro-medium-r-normal-*-12-*-*-*-m-*-*-1"
 PANEL_UNDERLINE='0'
 PANEL_HEIGHT='25'

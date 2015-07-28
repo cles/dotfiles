@@ -7,9 +7,10 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " UI
-Plugin 'sjl/badwolf'
+Plugin 'whatyouhide/gotham'
 Plugin 'bling/vim-airline'
 Plugin 'edkolev/tmuxline.vim'
+Plugin 'edkolev/promptline.vim'
 
 " file search
 Plugin 'kien/ctrlp.vim'
@@ -44,7 +45,7 @@ call vundle#end()
 filetype plugin indent on
 
 let g:airline_powerline_fonts = 1
-colorscheme badwolf
+colorscheme gotham
 
 " Leader
 let mapleader = ","
@@ -59,6 +60,9 @@ set showcmd       " display incomplete commands
 set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
+
+" of course
+syntax on
 
 " Numbers
 set relativenumber
@@ -107,7 +111,7 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
-" ESC remap
+" ESC remap because Kinesis Advantage Pro ESC is so bad
 inoremap jj <Esc>
 
 " reload vimrc automagically after any modification
