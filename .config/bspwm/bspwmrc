@@ -13,5 +13,5 @@ bspc rule -a Termite desktop=^1
 bspc rule -a Chromium desktop=^2
 
 feh -z --bg-scale ~/media/pictures/wallpapers/*
-rofi
 $HOME/.config/panel/panel &
+dunst

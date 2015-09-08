@@ -6,4 +6,5 @@
 .config/menus
 .config/mpd
 .config/systemd
+.config/pulse
 .vim/.netrwhist

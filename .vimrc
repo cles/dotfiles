@@ -12,6 +12,10 @@ Plugin 'bling/vim-airline'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'edkolev/promptline.vim'
 
+" just tpope things
+Plugin 'tpope/vim-projectionist'
+Plugin 'tpope/vim-dispatch'
+
 " file search
 Plugin 'kien/ctrlp.vim'
 
@@ -49,7 +53,7 @@ call vundle#end()
 filetype plugin indent on
 
 let g:airline_powerline_fonts = 1
-colorscheme gotham
+colorscheme gotham256
 
 " Leader
 let mapleader = ","
