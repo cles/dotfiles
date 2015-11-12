@@ -1,3 +1,3 @@
-export EDITOR=emacs
+export EDITOR=vim
 
 typeset -U path
