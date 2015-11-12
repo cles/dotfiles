@@ -59,3 +59,6 @@
 [submodule ".vim/bundle/gotham"]
 	path = .vim/bundle/gotham
 	url = git@github.com:whatyouhide/gotham.git
+[submodule ".tmux/plugins/tpm"]
+	path = .tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
