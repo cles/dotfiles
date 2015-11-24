@@ -52,6 +52,9 @@ Plugin 'marijnh/tern_for_vim'
 " React/JSX
 Plugin 'mxw/vim-jsx'
 
+" handlebars
+Plugin 'mustache/vim-mustache-handlebars'
+
 call vundle#end()
 filetype plugin indent on
 
