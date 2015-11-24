@@ -19,6 +19,9 @@ Plugin 'tpope/vim-dispatch'
 " file search
 Plugin 'kien/ctrlp.vim'
 
+" ag
+Plugin 'rking/ag.vim'
+
 " code completion
 Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
@@ -93,6 +96,9 @@ set list listchars=tab:»·,trail:·,nbsp:·
 set splitbelow
 set splitright
 
+" netrw
+let g:netrw_liststyle=3
+
 " Quicker window movement
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -104,14 +110,24 @@ nnoremap <C-w>e <C-w>v
 nnoremap <C-w>o <C-w>s
 
 " Various shortcuts
-nnoremap <leader>w :w
-nnoremap <leader>q :q
+nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
+nnoremap <leader>p :CtrlP<CR>
+nnoremap <leader>tre :Vex<CR>
+nnoremap <leader>tro :Sex<CR>
+nnoremap <leader>tc :tabnew<CR>
+nnoremap <leader>tn :tabnext<CR>
+nnoremap <leader>tp :tabprevious<CR>
+nnoremap <leader>tq :tabclose<CR>
+nnoremap <leader>td :tabdo
 nnoremap <leader>we <C-w>v
 nnoremap <leader>wo <C-w>s
 nnoremap <leader>wj <C-w>j
 nnoremap <leader>wk <C-w>k
 nnoremap <leader>wh <C-w>h
 nnoremap <leader>wl <C-w>l
+nnoremap <leader>w+ <C-w>+
+nnoremap <leader>w- <C-w>-
 
 " No bad habits
 nnoremap <Left> :echoe "Use h"<CR>
