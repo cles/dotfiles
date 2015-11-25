@@ -104,6 +104,12 @@ set list listchars=tab:»·,trail:·,nbsp:·
 set splitbelow
 set splitright
 
+" No bad habits
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>
+
 " Quicker window movement
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -151,12 +157,6 @@ nnoremap <leader>p :CtrlP<CR>
 " Ag
 nnoremap <leader>ag :Ag
 
-" No bad habits
-nnoremap <Left> :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
-nnoremap <Up> :echoe "Use k"<CR>
-nnoremap <Down> :echoe "Use j"<CR>
-
 " ESC is always too far
 inoremap jj <Esc>
 
@@ -165,8 +165,11 @@ nmap <leader>gs :Gstatus<CR>
 nmap <leader>gc :Gcommit<CR>
 vmap <leader>gb :Gblame<CR>
 
-" vim-mustache-handlebars
+" vimfiler
+let g:vimfiler_as_default_explorer = 1
+nnoremap <leader>tr :VimFilerExplorer<CR>
 
+" vim-mustache-handlebars
 let g:mustache_abbreviations = 1
 
 " autoreload conf
