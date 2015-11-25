@@ -16,6 +16,10 @@ Plugin 'edkolev/promptline.vim'
 Plugin 'tpope/vim-projectionist'
 Plugin 'tpope/vim-dispatch'
 
+" vimfiler
+Plugin 'Shougo/unite.vim'
+Plugin 'Shougo/vimfiler.vim'
+
 " file search
 Plugin 'kien/ctrlp.vim'
 
@@ -59,6 +63,7 @@ call vundle#end()
 filetype plugin indent on
 
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 colorscheme gotham256
 
 " Leader
@@ -99,9 +104,6 @@ set list listchars=tab:»·,trail:·,nbsp:·
 set splitbelow
 set splitright
 
-" netrw
-let g:netrw_liststyle=3
-
 " Quicker window movement
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -115,22 +117,39 @@ nnoremap <C-w>o <C-w>s
 " Various shortcuts
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
-nnoremap <leader>p :CtrlP<CR>
-nnoremap <leader>tre :Vex<CR>
-nnoremap <leader>tro :Sex<CR>
+
+" Buffers
+nnoremap <leader>bls :buffers<CR>
+nnoremap <leader>bn :bnext<CR>
+nnoremap <leader>bp :bprev<CR>
+nnoremap <leader>bq :bdelete<CR>
+nnoremap <leader>bd :bufdo
+
+" Tabs
 nnoremap <leader>tc :tabnew<CR>
 nnoremap <leader>tn :tabnext<CR>
 nnoremap <leader>tp :tabprevious<CR>
 nnoremap <leader>tq :tabclose<CR>
 nnoremap <leader>td :tabdo
+
+" Views
 nnoremap <leader>we <C-w>v
 nnoremap <leader>wo <C-w>s
+nnoremap <leader>wq <C-w>q
 nnoremap <leader>wj <C-w>j
 nnoremap <leader>wk <C-w>k
 nnoremap <leader>wh <C-w>h
 nnoremap <leader>wl <C-w>l
 nnoremap <leader>w+ <C-w>+
 nnoremap <leader>w- <C-w>-
+nnoremap <leader>w< <C-w><
+nnoremap <leader>w> <C-w>>
+
+"CtrlP
+nnoremap <leader>p :CtrlP<CR>
+
+" Ag
+nnoremap <leader>ag :Ag
 
 " No bad habits
 nnoremap <Left> :echoe "Use h"<CR>
@@ -138,13 +157,17 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
-" ESC remap because Kinesis Advantage Pro ESC is so bad
+" ESC is always too far
 inoremap jj <Esc>
-
-" reload vimrc automagically after any modification
-:au! BufWritePost $MYVIMRC source $MYVIMRC
 
 " Fugitive (Git)
 nmap <leader>gs :Gstatus<CR>
 nmap <leader>gc :Gcommit<CR>
 vmap <leader>gb :Gblame<CR>
+
+" vim-mustache-handlebars
+
+let g:mustache_abbreviations = 1
+
+" autoreload conf
+:au! BufWritePost $MYVIMRC source $MYVIMRC
