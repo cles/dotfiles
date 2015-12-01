@@ -13,6 +13,9 @@
 [submodule ".vim/bundle/ag.vim"]
 	path = .vim/bundle/ag.vim
 	url = git@github.com:rking/ag.vim.git
+[submodule ".vim/bundle/lexima.vim"]
+	path = .vim/bundle/lexima.vim
+	url = git@github.com:cohama/lexima.vim.git
 [submodule ".vim/bundle/unite.vim"]
 	path = .vim/bundle/unite.vim
 	url = git@github.com:Shougo/unite.vim.git

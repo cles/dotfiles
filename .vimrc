@@ -30,6 +30,9 @@ Plugin 'rking/ag.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
 
+" autoclose
+Plugin 'cohama/lexima.vim'
+
 " git
 Plugin 'tpope/vim-fugitive'
 
