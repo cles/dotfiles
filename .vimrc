@@ -39,6 +39,9 @@ Plugin 'tpope/vim-fugitive'
 " rails
 Plugin 'tpope/vim-rails'
 
+" slim
+Plugin 'slim-template/vim-slim'
+
 " elixir
 Plugin 'elixir-lang/vim-elixir'
 
@@ -154,7 +157,7 @@ nnoremap <leader>w- <C-w>-
 nnoremap <leader>w< <C-w><
 nnoremap <leader>w> <C-w>>
 
-"CtrlP
+" CtrlP
 nnoremap <leader>p :CtrlP<CR>
 
 " Ag
@@ -174,6 +177,9 @@ nnoremap <leader>tr :VimFilerExplorer<CR>
 
 " vim-mustache-handlebars
 let g:mustache_abbreviations = 1
+
+" lexima
+let g:lexima_enable_basic_rules = 1
 
 " autoreload conf
 :au! BufWritePost $MYVIMRC source $MYVIMRC
