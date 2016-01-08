@@ -33,6 +33,9 @@ Plugin 'Valloric/YouCompleteMe'
 " autoclose
 Plugin 'cohama/lexima.vim'
 
+" trailing whitespace
+Plugin 'ntpeters/vim-better-whitespace'
+
 " git
 Plugin 'tpope/vim-fugitive'
 
@@ -180,6 +183,9 @@ let g:mustache_abbreviations = 1
 
 " lexima
 let g:lexima_enable_basic_rules = 1
+
+" syntastic + jshint
+let g:syntastic_javascript_checkers = ['jshint']
 
 " autoreload conf
 :au! BufWritePost $MYVIMRC source $MYVIMRC
