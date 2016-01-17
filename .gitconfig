@@ -10,6 +10,7 @@
   lg = log -p
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  root = rev-parse --show-toplevel
 [push]
 	default = simple
 [diff]
