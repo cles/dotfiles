@@ -15,6 +15,7 @@ Plugin 'edkolev/promptline.vim'
 " just tpope things
 Plugin 'tpope/vim-projectionist'
 Plugin 'tpope/vim-dispatch'
+Plugin 'tpope/vim-surround'
 
 " vimfiler
 Plugin 'Shougo/unite.vim'
