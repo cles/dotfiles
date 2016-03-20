@@ -167,6 +167,9 @@ nnoremap <leader>p :CtrlP<CR>
 " Ag
 nnoremap <leader>ag :Ag
 
+" use Ag from CtrlP
+let g:ctrlp_user_command = 'ag -l --nocolor -g "" %s'
+
 " ESC is always too far
 inoremap jj <Esc>
 
