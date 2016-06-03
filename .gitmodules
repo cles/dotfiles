@@ -3,7 +3,7 @@
 	url = git@github.com:gmarik/Vundle.vim.git
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
-	url = git@github.com:kien/ctrlp.vim.git
+	url = git@github.com:ctrlpvim/ctrlp.vim.git
 [submodule ".vim/bundle/tmuxline.vim"]
 	path = .vim/bundle/tmuxline.vim
 	url = git@github.com:edkolev/tmuxline.vim.git
@@ -74,6 +74,9 @@
 [submodule ".vim/bundle/vim-jsx"]
 	path = .vim/bundle/vim-jsx
 	url = git@github.com:mxw/vim-jsx.git
+[submodule ".vim/bundle/ember_tools.vim"]
+	path = .vim/bundle/ember_tools.vim
+	url = git@github.com:AndrewRadew/ember_tools.git
 [submodule ".vim/bundle/vim-mustache-handlebars"]
 	path = .vim/bundle/vim-mustache-handlebars
 	url = git@github.com:mustache/vim-mustache-handlebars.git

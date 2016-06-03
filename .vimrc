@@ -22,7 +22,7 @@ Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/vimfiler.vim'
 
 " file search
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " ag
 Plugin 'rking/ag.vim'
@@ -65,6 +65,9 @@ Plugin 'marijnh/tern_for_vim'
 
 " React/JSX
 Plugin 'mxw/vim-jsx'
+
+" Ember
+Plugin 'AndrewRadev/ember_tools.vim'
 
 " handlebars
 Plugin 'mustache/vim-mustache-handlebars'
@@ -163,12 +166,16 @@ nnoremap <leader>w> <C-w>>
 
 " CtrlP
 nnoremap <leader>p :CtrlP<CR>
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_regexp = 1
 
 " Ag
 nnoremap <leader>ag :Ag
+let g:ag_working_path_mode="r"
 
 " use Ag from CtrlP
-let g:ctrlp_user_command = 'ag -l --nocolor -g "" %s'
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_use_caching = 0
 
 " ESC is always too far
 inoremap jj <Esc>
@@ -187,6 +194,8 @@ let g:mustache_abbreviations = 1
 
 " lexima
 let g:lexima_enable_basic_rules = 1
+let g:lexima_enable_newline_rules = 1
+let g:lexima_enable_endwise_rules = 1
 
 " syntastic + jshint
 let g:syntastic_javascript_checkers = ['jshint']
