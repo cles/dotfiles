@@ -48,6 +48,7 @@ Plugin 'slim-template/vim-slim'
 
 " elixir
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'slashmili/alchemist.vim'
 
 " rust
 Plugin 'rust-lang/rust.vim'
