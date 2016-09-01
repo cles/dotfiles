@@ -76,7 +76,7 @@
 	url = git@github.com:mxw/vim-jsx.git
 [submodule ".vim/bundle/ember_tools.vim"]
 	path = .vim/bundle/ember_tools.vim
-	url = git@github.com:AndrewRadew/ember_tools.git
+	url = git@github.com:AndrewRadev/ember_tools.vim.git
 [submodule ".vim/bundle/vim-mustache-handlebars"]
 	path = .vim/bundle/vim-mustache-handlebars
 	url = git@github.com:mustache/vim-mustache-handlebars.git
