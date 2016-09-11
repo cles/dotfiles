@@ -67,6 +67,9 @@ Plugin 'marijnh/tern_for_vim'
 " React/JSX
 Plugin 'mxw/vim-jsx'
 
+" Elm
+Plugin 'lambdatoast/elm.vim'
+
 " Ember
 Plugin 'AndrewRadev/ember_tools.vim'
 
